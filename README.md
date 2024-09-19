@@ -5,15 +5,12 @@
 요구사항의 내용은 프런트엔드 없이, 백엔드만 개발한다. 별도의 프런트엔드 클라이언트가 존재한다고 생각하고 서버를 만들고, Postman으로 테스트를 한다. 단, CORS는 지금은 고려하지 않는다.
 
 ## 스택
-- Spring Boot 3.2.3
+- Spring Boot 3.3.3
     - Spring Boot Starter Web
     - Spring Boot Starter Data JPA
     - Spring Boot Starter Security
-    - Spring Boot Starter Mail
     - Lombok
 - Java JWT 0.11.5
-- Querydsl 5.1.0
-- Gson 2.10.1
 
 ## 실행
 1. 본 Repository를 clone 받는다.
@@ -28,7 +25,7 @@ Java 17 버전 필요
 1. `./gradlew clean`
 2. `./gradlew bootJar`
 3. `cd build/lib` (폴더 이동)
-4. `java -jar community-0.0.1-SNAPSHOT.jar`
+4. `java -jar market-0.0.1-SNAPSHOT.jar`
 
 ### JAR로 실행하는 경우 (Macos, Linux)
 
@@ -38,7 +35,7 @@ CMD에서,
 1. `gradlew.bat clean`
 2. `gradlew.bat bootJar`
 3. `cd build/lib` (폴더 이동)
-4. `java -jar community-0.0.1-SNAPSHOT.jar`
+4. `java -jar market-0.0.1-SNAPSHOT.jar`
 
 ## 필수 기능
 
